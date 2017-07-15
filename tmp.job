@@ -7,22 +7,31 @@ direct=1
 runtime=60
 directory=/tmp
 filename=ssd.test.file
-write_bw_log=log_bw
-write_iops_log=log_iops
-write_lat_log=log_lat
 
 [seq-read]
 rw=read
 stonewall
+write_bw_log=sqread_bw
+write_iops_log=sqread_iops
+write_lat_log=sqread_lat
 
 [rand-read]
 rw=randread
 stonewall
+write_bw_log=randread_bw
+write_iops_log=randread_iops
+write_lat_log=randread_lat
 
 [seq-write]
 rw=write
 stonewall
+write_bw_log=sqwrite_bw
+write_iops_log=sqwrite_iops
+write_lat_log=sqwrite_lat
 
 [rand-write]
 rw=randwrite
 stonewall
+write_bw_log=randread_bw
+write_iops_log=randread_iops
+write_lat_log=randread_lat
