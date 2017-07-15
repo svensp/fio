@@ -7,6 +7,9 @@ direct=1
 runtime=60
 directory=/tmp
 filename=ssd.test.file
+write_bw_log=log_bw
+write_iops_log=log_iops
+write_lat_log=log_lat
 
 [seq-read]
 rw=read
